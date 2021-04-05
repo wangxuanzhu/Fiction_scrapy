@@ -5,6 +5,7 @@ from Fiction.items import FictionItem
 class LewenSpider(scrapy.Spider):
     name = 'quanben'#全本小说
     allowed_domains = ['ad50.com']
+    # 在下面输入小说详情页地址
     start_urls = ['https://www.qb50.com/book_23146/']
 
     def parse(self, response):

@@ -3,8 +3,9 @@ from Fiction.items import FictionItem
 
 
 class NovelSpider(scrapy.Spider):
-    name = 'qidian'#起点小说
+    name = 'qidian'# 起点小说
     allowed_domains = ['qidian.com']
+    # 在下面输入小说详情页地址
     start_urls = ['https://book.qidian.com/info/1019544887#Catalog']
 
     def parse(self, response):
